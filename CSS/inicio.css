@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #f3f3f3;
+}
+
+.banner{
+    position: relative;
+    background-image: url(../Media/paginainicio.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.0rem;
+    color: #556B2F;
+    -webkit-text-stroke: 0.5px black; /* Borde negro delgado */
+    margin: 0;
+}
+
+p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #556B2F;
+    -webkit-text-stroke: 0.5px black; /* Borde negro delgado */
+    margin: 0.5px 0;
+}
+
+.cta-button{
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #798851; 
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: all 0.4s ease;
+}
+
+.cta-button:hover{
+    background-color: #556B2F; 
+    transition: 0.4s;
+    transform: scale(1.05)
+}
+
+.profile-menu {.profile-menu {
+    position: relative;    position: relative;
+    display: inline-block;
+}
+
+.profile-menu .dropdown {
+    display: none; /* Oculta la pestaña inicialmente */
+    position: absolute;
+    top: 100%; /* Posiciona la pestaña debajo del perfil */
+    left: 0;
+    background-color: #f3f3f3;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.profile-menu:hover .dropdown {
+    display: block; /* Muestra la pestaña al pasar el mouse */
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #556B2F;
+    padding: 5px 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+}    border-radius: 3px;    color: white;    background-color: #798851;.dropdown a:hover {
+
+
+
+
+
+
+
+}    border-radius: 3px;    color: white;    background-color: #798851;.dropdown a:hover {}    display: block;    padding: 5px 10px;    color: #556B2F;    text-decoration: none;.dropdown a {}    display: block; /* Muestra la pestaña al pasar el mouse */.profile-menu:hover .dropdown {}    border-radius: 5px;    z-index: 1000;    padding: 10px;    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);    background-color: #f3f3f3;    left: 0;    top: 100%; /* Posiciona la pestaña debajo del perfil */    position: absolute;    display: none; /* Oculta la pestaña inicialmente */.profile-menu .dropdown {}    display: inline-block;    display: inline-block;
+}
+
+.profile-menu .dropdown {
+    display: none; /* Oculta la pestaña inicialmente */
+    position: absolute;
+    top: 100%; /* Posiciona la pestaña debajo del perfil */
+    left: 0;
+    background-color: #f3f3f3;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.profile-menu:hover .dropdown {
+    display: block; /* Muestra la pestaña al pasar el mouse */
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #556B2F;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #798851;
+    color: white;
+    border-radius: 3px;
+}
+
+

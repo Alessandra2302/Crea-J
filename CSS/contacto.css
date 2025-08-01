@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size:15px;
+    background-color:#FAF9F6;
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed; /* Hace que el menú quede fijo */
+    top: 0; /* Posiciona el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #4B5F2A; /* Fondo para que sea visible */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 15px 0; /* Espaciado interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    background-color: #4B5F2A;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el espacio interno de los enlaces */
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: 600; /* Grosor del texto */
+    position: relative; /* Necesario para el subrayado */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Grosor del subrayado */
+    background: linear-gradient(90deg, #a7a7a7, #f7f7f7); /* Degradado del subrayado */
+    transition: width 0.3s ease; /* Suaviza la animación */
+}
+
+.menu a:hover {
+    background-color: #384720;
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo del enlace */
+}
+
+.menu a.active::after {
+    width: 100%; /* Mantiene el subrayado completo */
+    background: linear-gradient(90deg, #eeeeee, #9f9f9f); /* Degradado del subrayado */
+}
+
+
+
+
+.banner {
+    background-color: FAF9F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*PARTICULAS*/
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#particle-canvas {
+    position: absolute;
+    top: 80px; /* Adjust to sit below header */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px); /* Cover only content area */
+    pointer-events: none;
+    z-index: -1;
+    filter: drop-shadow(0 0 5px rgba(75, 95, 42, 0.3)); /* Subtle glow for canvas */
+}
+
+.list{
+    margin: 0 30px;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; 
+    background-color: transparent;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px; /* Mueve toda la sección más abajo */
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #555;
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 30px;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+/*LOGO*/
+.contact-item img {
+    width: 25px; 
+    height: auto;
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
+}
+
+.contact-item i {
+    font-size: 24px; 
+    color: #333; 
+    margin-right: 8px; 
+    vertical-align: middle; 
+
+}
+
+.contact-section h2 {
+    color: #000000;    
+    font-size: 1.7em;    
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    text-align:left;    
+    color: #000000;    
+    font-size: 1.5em;    
+    margin: 5px 0;
+}
+
+.contact-info {    
+    text-align: left;    
+    display: flex;    
+    justify-content: center;    
+    align-items: center;    
+    gap: 40px;    margin-top: 20px;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+
+/*ÍCONOS*/ 
+
+.contact-item img {
+    width: 32px;  
+    height: 32px;    
+    margin-right: 8px;    
+    vertical-align: middle;
+}
+
+.contact-item .logo {
+    width: 200px;
+height: auto;
+}

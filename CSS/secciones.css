@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size:20px;
+    background-color:#FAF9F6;
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+/*MENÚ DE NAVEGACIÓN*/
+
+header {
+    position: fixed; /* Hace que el menú quede fijo */
+    top: 0; /* Posiciona el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #4B5F2A; /* Fondo para que sea visible */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 15px 0; /* Espaciado interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    background-color: #4B5F2A;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el espacio interno de los enlaces */
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: 600; /* Grosor del texto */
+    position: relative; /* Necesario para el subrayado */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Grosor del subrayado */
+    background: linear-gradient(90deg, #a7a7a7, #f7f7f7); /* Degradado del subrayado */
+    transition: width 0.3s ease; /* Suaviza la animación */
+}
+
+.menu a:hover {
+    background-color: #384720;
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo del enlace */
+}
+
+.menu a.active::after {
+    width: 100%; /* Mantiene el subrayado completo */
+    background: linear-gradient(90deg, #eeeeee, #9f9f9f); /* Degradado del subrayado */
+}
+
+
+
+.banner {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*PARTICULAS*/
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#particle-canvas {
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    pointer-events: none;
+    z-index: -1;
+    filter: drop-shadow(0 0 5px rgba(75, 95, 42, 0.3));
+}
+
+/*SECCIONES*/
+.destinos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.secciones {
+    display: flex; /* Activa el diseño en línea */
+    justify-content: space-around; /* Espacio uniforme entre los divs */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los divs se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los divs */
+    margin: 20px auto; /* Centra la sección horizontalmente */
+}
+
+.seccion {
+    background-color: #eddfca;
+    border-radius: 15px;
+    text-align: center;
+    margin: 90px 10px 0 10px; /* Aumenta el margen superior para mover los cuadros más abajo */
+    padding: 15px;
+    width: 300px;
+    border: 3px #67833a solid;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    text-align: center; /* Centra el contenido dentro de cada div */
+    flex: 1; /* Hace que los divs sean flexibles */
+    max-width: 300px; /* Limita el ancho máximo de cada div */
+}
+
+.seccion:hover{
+    transform: scale(1.05);
+}
+
+.seccionBoton{
+    text-decoration: none;
+}
+
+.seccion h1 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.seccion img {
+    border-radius: 15px;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}

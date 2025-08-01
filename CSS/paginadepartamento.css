@@ -1,0 +1,130 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+header {
+    position: fixed; /* Hace que el menú quede fijo */
+    top: 0; /* Posiciona el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #4B5F2A; /* Fondo para que sea visible */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 15px 0; /* Espaciado interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    background-color: #4B5F2A;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el espacio interno de los enlaces */
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: 600; /* Grosor del texto */
+    position: relative; /* Necesario para el subrayado */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Grosor del subrayado */
+    background: linear-gradient(90deg, #a7a7a7, #f7f7f7); /* Degradado del subrayado */
+    transition: width 0.3s ease; /* Suaviza la animación */
+}
+
+.menu a:hover {
+    background-color: #384720;
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo del enlace */
+}
+
+.menu a.active::after {
+    width: 100%; /* Mantiene el subrayado completo */
+    background: linear-gradient(90deg, #eeeeee, #9f9f9f); /* Degradado del subrayado */
+}
+
+
+.banner {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.menu i {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    max-width: 500px;
+    text-align: left;
+}
+.texto div {
+    width: 100%;
+
+    text-align: center;
+}
+.boton {
+    background-position-y: 200px;
+    display: inline-block;
+    background-color: #4B5F2A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration:none;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+#boxboton .boton:hover{
+    transition: 0.4s;
+    transform: scale(1.05)
+}
+.imagen img {
+    width: 299px;
+    border: 2px solid #4B5F2A;
+}
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 150%;
+}

@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(45deg, #f3f3f3, #f3f3f3, #e8edd7, #f3f3f3);
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 100px; /* Incrementa el espacio superior para mover el contenido hacia abajo */
+}
+
+header {
+    position: fixed; /* Hace que el menú quede fijo */
+    top: 0; /* Posiciona el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #4B5F2A; /* Fondo para que sea visible */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 15px 0; /* Espaciado interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    background-color: #4B5F2A;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el espacio interno de los enlaces */
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: 600; /* Grosor del texto */
+    position: relative; /* Necesario para el subrayado */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Grosor del subrayado */
+    background: linear-gradient(90deg, #a7a7a7, #f7f7f7); /* Degradado del subrayado */
+    transition: width 0.3s ease; /* Suaviza la animación */
+}
+
+.menu a:hover {
+    background-color: #384720;
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo del enlace */
+}
+
+.menu a.active::after {
+    width: 100%; /* Mantiene el subrayado completo */
+    background: linear-gradient(90deg, #eeeeee, #9f9f9f); /* Degradado del subrayado */
+}
+
+
+
+.banner {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*PARTICULAS*/
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#particle-canvas {
+    position: absolute;
+    top: 80px; 
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    pointer-events: none;
+    z-index: -1;
+    filter: drop-shadow(0 0 5px rgba(75, 95, 42, 0.3));
+}
+
+/*LUGARES*/
+.titulo {
+    background: linear-gradient(135deg, #e7dfd7 0%, #f4f1ec 100%);
+    color: #4b5b2c;
+    font-size: 18px;
+    padding: 20px 35px;
+    border: none;
+    width: fit-content;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(75, 91, 44, 0.3);
+    transition: all 0.3s ease;
+    margin-top: -10px;
+}
+
+.titulo:hover {
+    transform: translateY(-2px);
+    box-shadow: 10px 10px 25px rgba(75, 91, 44, 0.4);
+}
+
+.titulo h1 {
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(75, 91, 44, 0.1);
+    
+}
+
+
+.textPlace {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px 60px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    font-size: 1.4rem;
+    max-width: 550px;
+    text-align: justify;
+    color: #2c3e15;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4B5F2A;
+    margin-top: 40px;
+}
+
+
+.place {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+}
+
+.place img {
+    background: linear-gradient(135deg, #556B2F 0%, #4B5F2A 100%);
+    padding: 8px;
+    border-radius: 20px;
+    width: 90%; 
+    height: 250px; 
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(85, 107, 47, 0.3);
+    object-fit: cover;
+    margin-top: -500px; 
+    margin-left: 50px; 
+    margin-right: auto; 
+}
+
+.place img:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 12px 35px rgba(85, 107, 47, 0.5);
+}
+
+.place::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #4B5F2A, #556B2F, #4B5F2A, #556B2F);
+    border-radius: 25px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.place:hover::before {
+    opacity: 0.7;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 40px 60px 60px 60px;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4B5F2A;
+    flex: 1;
+    min-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.info-title {
+    color: #4B5F2A;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #e7dfd7;
+    padding-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(231, 223, 215, 0.3);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(231, 223, 215, 0.5);
+    transform: translateX(5px);
+}
+
+.info-item i {
+    color: #4B5F2A;
+    font-size: 1.3rem;
+    margin-right: 15px;
+    margin-top: 3px;
+    min-width: 25px;
+}
+
+.categoria {
+    color: #556B2F;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.info-item span:not(.categoria) {
+    color: #2c3e15;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}

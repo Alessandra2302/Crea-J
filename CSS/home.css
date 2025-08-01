@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size:90px;
+    background-color:#FAF9F6;
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+/*MENÚ DE NAVEGACIÓN*/
+
+header {
+    position: fixed; /* Hace que el menú quede fijo */
+    top: 0; /* Posiciona el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #4B5F2A; /* Fondo para que sea visible */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 15px 0; /* Espaciado interno */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    background-color: #4B5F2A;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta el espacio interno de los enlaces */
+    font-size: 24px; /* Tamaño de la letra */
+    font-weight: 600; /* Grosor del texto */
+    position: relative; /* Necesario para el subrayado */
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; /* Grosor del subrayado */
+    background: linear-gradient(90deg, #a7a7a7, #f7f7f7); /* Degradado del subrayado */
+    transition: width 0.3s ease; /* Suaviza la animación */
+}
+
+.menu a:hover {
+    background-color: #384720;
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande el subrayado al ancho completo del enlace */
+}
+
+.menu a.active::after {
+    width: 100%; /* Mantiene el subrayado completo */
+    background: linear-gradient(90deg, #eeeeee, #9f9f9f); /* Degradado del subrayado */
+}
+
+
+
+.banner {
+    background-color: FAF9F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/*PARTICULAS*/
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#particle-canvas {
+    position: absolute;
+    top: 80px; /* Adjust to sit below header */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px); /* Cover only content area */
+    pointer-events: none;
+    z-index: -1;
+    filter: drop-shadow(0 0 5px rgba(75, 95, 42, 0.3)); /* Subtle glow for canvas */
+}
+
+/*HOME*/
+.content {
+    flex: 1;
+    width: 550px;
+    height: fit-content;
+}
+
+.content h1 {
+    color: #4d6533;
+    font-size: 32px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    padding-left: 55px;
+    margin-top: 70px; /* Mueve el título hacia abajo */
+}
+
+.content p {
+    color: #000;
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 500px;
+    padding-left: 80px;
+    text-align: justify;
+    margin-top: 40px; /* Mueve el texto hacia abajo */
+}
+
+.explore-button {
+    font-family: "Josefin Sans", sans-serif;
+    position: relative; /* Permite ajustar la posición con top */
+    top: -20px; /* Mueve el botón hacia arriba */
+    padding: 15px 30px;
+    background-color: #7a8b4f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.explore-button:hover {
+    background-color: #556B2F;
+    transform: scale(1.05);
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.images img {
+    width: 490px;
+    height: auto;
+    margin-top: 50px; /* Mueve la imagen hacia abajo */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}

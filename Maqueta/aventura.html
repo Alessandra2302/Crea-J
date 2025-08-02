@@ -1,34 +1,288 @@
-<header>
-    <ul class="menu">
-        <li>
-            <a href="../Maqueta/home.html">
-                <span>Inicio</span>
-            </a>
-        </li>
-        <li>
-            <a href="../Maqueta/secciones.html">
-                <span>Categorías</span>
-            </a>
-        </li>
-        <li>
-            <a href="../Maqueta/departamentos.html">
-                <span>Departamentos</span>
-            </a>
-        </li>
-        <li>
-            <a href="../Maqueta/contacto.html">
-                <span>Contacto</span>
-            </a>
-        </li>
-        <li>
-            <a href="../Maqueta/contacto.html">
-                <span>Perfil</span>
-            </a>
-        </li>
-        <li>
-            <a href="../Maqueta/contacto.html">
-                <span>Cerrar sesión</span>
-            </a>
-        </li>
-    </ul>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura - El Salvador</title>
+    <link rel="stylesheet" href="../CSS/destinos.css">
+    <link rel="stylesheet" href="../CSS/profile-dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li>
+                <a href="../Maqueta/home.html">
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Maqueta/secciones.html">
+                    <span>Categorías</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Maqueta/departamentos.html">
+                    <span>Departamentos</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Maqueta/contacto.html">
+                    <span>Contacto</span>
+                </a>
+            </li>
+            <li class="profile-menu">
+                <a href="#" class="profile-trigger">
+                    <span><i class="fas fa-user"></i> Perfil</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#">
+                        <i class="fas fa-user-edit"></i> Tu perfil
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i> Configuración
+                    </a>
+                    <a href="../Maqueta/login.html">
+                        <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="header-section">
+                <h1><i class="fas fa-mountain"></i> Destinos de Aventura en <br> El Salvador</h1>
+               
+                <div class="description-text">
+                     <p>Descubre los lugares más emocionantes para vivir experiencias únicas llenas de adrenalina y naturaleza. El Salvador te ofrece una amplia variedad de destinos perfectos para los amantes de la aventura: desde volcanes activos hasta playas ideales para surf, pasando por lagos cristalinos, bosques nebulosos y parques nacionales con biodiversidad única.</p>
+                
+                    <p>Nuestro país, aunque pequeño en territorio, es gigante en aventuras. Aquí podrás escalar volcanes con vistas espectaculares, navegar por ríos en emocionantes sesiones de rafting, explorar laberintos naturales, disfrutar de cascadas perfectas para rappel, y relajarte en lagos volcánicos ideales para deportes acuáticos.</p>                    
+                </div>
+            </div>
+             <div class="adventure-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> Información Importante</h3>
+                    <ul>
+                        <li><i class="fas fa-shield-alt"></i> Siempre usa equipo de seguridad adecuado</li>
+                        <li><i class="fas fa-water"></i> Mantente hidratado durante las actividades</li>
+                        <li><i class="fas fa-map-marked-alt"></i> Contrata guías locales certificados</li>
+                        <li><i class="fas fa-first-aid"></i> Lleva un botiquín de primeros auxilios</li>
+                        <li><i class="fas fa-phone"></i> Informa tu itinerario a familiares</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            <div class="destinations-grid">
+                <!-- Aqua Park -->
+                <div class="destination-card">
+                    <a href="../Maqueta/aquaPark.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/aventurasurfcity.jpg" alt="Aqua Park">
+                    </div>
+                    <div class="card-content">
+                        <h3>Aqua Park</h3>
+                    </div>
+                </div>
+
+                <!-- Laberinto de Albania -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/bosqueChaguantique.jpg" alt="Laberinto de Albania">
+                    </div>
+                    <div class="card-content">
+                        <h3>Laberinto de Albania</h3>
+                    </div>
+                </div>
+
+                <!-- Portezuelo -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/Cerro Cacahuatique.jpg" alt="Portezuelo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Portezuelo</h3>
+                    </div>
+                </div>
+
+                <!-- Paso de Alaska -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/llanodelmuerto.jpg" alt="Paso de Alaska">
+                    </div>
+                    <div class="card-content">
+                        <h3>Paso de Alaska</h3>
+                    </div>
+                </div>
+
+                <!-- Volcán Acatenango -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/volcanSantaAna.jpg" alt="Volcán Acatenango">
+                    </div>
+                    <div class="card-content">
+                        <h3>Volcán Acatenango</h3>
+                    </div>
+                </div>
+
+                <!-- Lago de Ilopango -->
+                <div class="destination-card">
+                    <a href="../Maqueta/lagoDeIlopango.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/lagoIlopango.jpg" alt="Lago de Ilopango">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lago de Ilopango</h3>
+                    </div>
+                </div>
+
+                <!-- Río Lempa Rafting -->
+                <div class="destination-card">
+                    <a href="../Maqueta/rioLempaRafting.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/rioLempa.jpg" alt="Río Lempa Rafting">
+                    </div>
+                    <div class="card-content">
+                        <h3>Río Lempa Rafting</h3>
+                    </div>
+                </div>
+
+                <!-- Las 100 Gradas de Alegría -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/Laguna de Alegría.jpg" alt="Las 100 Gradas de Alegría">
+                    </div>
+                    <div class="card-content">
+                        <h3>Las 100 Gradas de Alegría</h3>
+                    </div>
+                </div>
+
+                <!-- Sunset Park -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/sv.png" alt="Sunset Park">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sunset Park</h3>
+                    </div>
+                </div>
+
+                <!-- El Zonte -->
+                <div class="destination-card">
+                    <a href="../Maqueta/elzonte.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/elZonte.jpg" alt="El Zonte">
+                    </div>
+                    <div class="card-content">
+                        <h3>El Zonte</h3>
+                    </div>
+                </div>
+
+                <!-- El Tunco -->
+                <div class="destination-card">
+                    <a href="../Maqueta/elTunco.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/elTunco.jpg" alt="El Tunco">
+                    </div>
+                    <div class="card-content">
+                        <h3>El Tunco</h3>
+                    </div>
+                </div>
+
+                <!-- Lago de Coatepeque -->
+                <div class="destination-card">
+                    <a href="../Maqueta/lagocoatepeque.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/lagoCoatepeque.jpg" alt="Lago de Coatepeque">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lago de Coatepeque</h3>
+                    </div>
+                </div>
+
+                <!-- La Puerta del Diablo -->
+                <div class="destination-card">
+                    <a href="../Maqueta/puertadeldiablo.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/puertaDelDiablo.jpg" alt="La Puerta del Diablo">
+                    </div>
+                    <div class="card-content">
+                        <h3>La Puerta del Diablo</h3>
+                    </div>
+                </div>
+
+                <!-- El Imposible -->
+                <div class="destination-card">
+                    <a href="../Maqueta/bosqueElImposible.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/Bosque El Imposible.jpg" alt="El Imposible">
+                    </div>
+                    <div class="card-content">
+                        <h3>El Imposible</h3>
+                    </div>
+                </div>
+
+                <!-- Volcán de Santa Ana -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/volcanSantaAna.jpg" alt="Volcán de Santa Ana">
+                    </div>
+                    <div class="card-content">
+                        <h3>Volcán de Santa Ana</h3>
+                    </div>
+                </div>
+
+                <!-- Volcán de Izalco -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/volcanIzalco.jpg" alt="Volcán de Izalco">
+                    </div>
+                    <div class="card-content">
+                        <h3>Volcán de Izalco</h3>
+                    </div>
+                </div>
+
+                <!-- El Boquerón -->
+                <div class="destination-card">
+                    <a href="../Maqueta/elboqueron.html"></a>
+                    <div class="card-image">
+                        <img src="../Media/boqueron.jpg" alt="El Boquerón">
+                    </div>
+                    <div class="card-content">
+                        <h3>El Boquerón</h3>
+                    </div>
+                </div>
+
+                <!-- Monte Cristo -->
+                <div class="destination-card">
+                    <a href="#"></a>
+                    <div class="card-image">
+                        <img src="../Media/monteCristo.jpg" alt="Monte Cristo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Monte Cristo</h3>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="../JS/profile-dropdown.js"></script>
+    <script src="../JS/aventura.js"></script>
+</body>
+</html>

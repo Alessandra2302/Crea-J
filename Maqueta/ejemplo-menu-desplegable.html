@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Menú Desplegable - Perfil</title>
+    <!-- Incluye Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Incluye el CSS del menú desplegable -->
+    <link rel="stylesheet" href="../CSS/profile-dropdown.css">
+    <!-- Incluye las fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos básicos para el ejemplo */
+        body {
+            font-family: "Josefin Sans", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .navbar-example {
+            background-color: #4B5F2A;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-example h1 {
+            color: white;
+            margin: 0;
+        }
+        
+        .cta-button {
+            background-color: #798851;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #556B2F;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Implementación del Menú Desplegable de Perfil</h1>
+    
+    <div class="navbar-example">
+        <h1>Tu Sitio Web</h1>
+        
+        <!-- Menú desplegable de perfil -->
+        <div class="profile-menu">
+            <a href="#" class="cta-button">
+                <i class="fas fa-user"></i> Perfil
+            </a>
+            <div class="dropdown">
+                <a href="#">
+                    <i class="fas fa-user-edit"></i> Tu perfil
+                </a>
+                <a href="#">
+                    <i class="fas fa-cog"></i> Configuración
+                </a>
+                <a href="../Maqueta/login.html">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 20px; background: white; border-radius: 8px;">
+        <h2>Instrucciones de Uso:</h2>
+        <ol>
+            <li>Incluye el archivo CSS <code>profile-dropdown.css</code> en tu página</li>
+            <li>Incluye el archivo JavaScript <code>profile-dropdown.js</code> en tu página</li>
+            <li>Incluye Font Awesome para los iconos</li>
+            <li>Copia la estructura HTML del menú desplegable</li>
+            <li>Personaliza los enlaces según tus necesidades</li>
+            <li><strong>Funciona con CLICK</strong> - Haz click en "Perfil" para abrir/cerrar el menú</li>
+        </ol>
+        
+        <h3>Estructura HTML:</h3>
+        <pre><code>&lt;div class="profile-menu"&gt;
+    &lt;a href="#" class="cta-button"&gt;
+        &lt;i class="fas fa-user"&gt;&lt;/i&gt; Perfil
+    &lt;/a&gt;
+    &lt;div class="dropdown"&gt;
+        &lt;a href="#"&gt;
+            &lt;i class="fas fa-user-edit"&gt;&lt;/i&gt; Tu perfil
+        &lt;/a&gt;
+        &lt;a href="#"&gt;
+            &lt;i class="fas fa-cog"&gt;&lt;/i&gt; Configuración
+        &lt;/a&gt;
+        &lt;a href="../Maqueta/login.html"&gt;
+            &lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt; Cerrar sesión
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- No olvides incluir el JavaScript --&gt;
+&lt;script src="../JS/profile-dropdown.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+
+    <!-- Script para el menú desplegable -->
+    <script src="../JS/profile-dropdown.js"></script>
+</body>
+</html>

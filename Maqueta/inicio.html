@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Salvador te espera</title>
     <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -20,12 +21,23 @@
         </div>
     </header>
     <div class="profile-menu">
-        <a href="../Maqueta/secciones.html" class="cta-button">Perfil</a>
+        <a href="#" class="cta-button">
+            <i class="fas fa-user"></i> Perfil
+        </a>
         <div class="dropdown">
-            <a href="../Maqueta/aguastermales.html">Editar perfil</a>
-            <a href="#">Configuración</a>
-            <a href="#">Cerrar sesión</a>
+            <a href="#">
+                <i class="fas fa-user-edit"></i> Tu perfil
+            </a>
+            <a href="#">
+                <i class="fas fa-cog"></i> Configuración
+            </a>
+            <a href="../Maqueta/login.html">
+                <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+            </a>
         </div>
     </div>
+
+    <!-- Script para el menú desplegable -->
+    <script src="../JS/profile-dropdown.js"></script>
 </body>
 </html>

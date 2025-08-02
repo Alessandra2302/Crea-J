@@ -1,0 +1,100 @@
+/* Estilos del menú desplegable de perfil */
+/* Este archivo puede ser incluido en cualquier página que necesite el menú desplegable */
+
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1001;
+    border-radius: 8px;
+    min-width: 180px;
+    border: 1px solid #e0e0e0;
+    margin-top: 5px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.profile-menu.active .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown a {
+    text-decoration: none !important;
+    color: #333 !important;
+    padding: 12px 16px !important;
+    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px !important;
+    transition: all 0.3s ease;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.dropdown a:hover {
+    background-color: #4B5F2A !important;
+    color: white !important;
+}
+
+.dropdown a i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Anular estilos de otros menús */
+.dropdown a::after {
+    display: none !important;
+}
+
+.dropdown a::before {
+    display: none !important;
+}
+
+/* Separador entre elementos del menú */
+.dropdown a:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Estilo especial para el botón de cerrar sesión */
+.dropdown a[href*="login.html"] {
+    color: #d32f2f !important;
+}
+
+.dropdown a[href*="login.html"]:hover {
+    background-color: #d32f2f !important;
+    color: white !important;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .profile-menu .dropdown {
+        right: 0;
+        left: auto;
+        min-width: 160px;
+    }
+}

@@ -61,78 +61,54 @@ p {
     transform: scale(1.05)
 }
 
-.profile-menu {.profile-menu {
-    position: relative;    position: relative;
+/* Menú desplegable de perfil */
+.profile-menu {
+    position: relative;
     display: inline-block;
 }
 
 .profile-menu .dropdown {
-    display: none; /* Oculta la pestaña inicialmente */
+    display: none;
     position: absolute;
-    top: 100%; /* Posiciona la pestaña debajo del perfil */
-    left: 0;
-    background-color: #f3f3f3;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
     z-index: 1000;
-    border-radius: 5px;
+    border-radius: 8px;
+    min-width: 180px;
+    border: 1px solid #e0e0e0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
 
-.profile-menu:hover .dropdown {
-    display: block; /* Muestra la pestaña al pasar el mouse */
+.profile-menu.active .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .dropdown a {
     text-decoration: none;
-    color: #556B2F;
-    padding: 5px 10px;
+    color: #333;
+    padding: 12px 16px;
     display: block;
-}
-
-
-
-
-
-
-
-}    border-radius: 3px;    color: white;    background-color: #798851;.dropdown a:hover {
-
-
-
-
-
-
-
-}    border-radius: 3px;    color: white;    background-color: #798851;.dropdown a:hover {}    display: block;    padding: 5px 10px;    color: #556B2F;    text-decoration: none;.dropdown a {}    display: block; /* Muestra la pestaña al pasar el mouse */.profile-menu:hover .dropdown {}    border-radius: 5px;    z-index: 1000;    padding: 10px;    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);    background-color: #f3f3f3;    left: 0;    top: 100%; /* Posiciona la pestaña debajo del perfil */    position: absolute;    display: none; /* Oculta la pestaña inicialmente */.profile-menu .dropdown {}    display: inline-block;    display: inline-block;
-}
-
-.profile-menu .dropdown {
-    display: none; /* Oculta la pestaña inicialmente */
-    position: absolute;
-    top: 100%; /* Posiciona la pestaña debajo del perfil */
-    left: 0;
-    background-color: #f3f3f3;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    z-index: 1000;
-    border-radius: 5px;
-}
-
-.profile-menu:hover .dropdown {
-    display: block; /* Muestra la pestaña al pasar el mouse */
-}
-
-.dropdown a {
-    text-decoration: none;
-    color: #556B2F;
-    padding: 5px 10px;
-    display: block;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .dropdown a:hover {
     background-color: #798851;
     color: white;
-    border-radius: 3px;
+}
+
+.dropdown a i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
 }
 
 

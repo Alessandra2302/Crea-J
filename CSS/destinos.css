@@ -212,7 +212,7 @@ header {
 /* Grid de destinos mejorado - 3 columnas */
 .destinations-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: -120px 50px 0px  50px;
     padding: 0;

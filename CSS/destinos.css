@@ -214,9 +214,6 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: -120px 50px 0px  50px;
-    padding: 0;
-    
     margin: -120px auto 0px auto;
     padding: 0 50px;
     max-width: 1200px;
@@ -236,8 +233,6 @@ header {
     border: 2px solid transparent;
     cursor: pointer;
     position: relative;
-    width: 300px;
-    height: 250px;
     width: 280px;
     margin: 0 auto;
 }
@@ -253,18 +248,15 @@ header {
 /* Contenedor de imagen */
 .card-image {
     position: relative;
-    width: 300px;
     width: 100%;
     height: 200px;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 25px 25px 0 0;
     margin-top: -25px;
     
 }
 
 .card-image img {
-    width: 300px;
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -282,7 +274,6 @@ header {
 
 /* Contenido de la tarjeta */
 .card-content {
-    padding: 25px 20px;
     padding: 0px 5px 0px 5px;
     text-align: center;
     background: white;
@@ -292,7 +283,6 @@ header {
 .card-content h3 {
     font-size: 20px;
     color: #2c3e1a;
-    margin-bottom: 8px;
     margin-bottom: 0px;
     margin-top: 0px;
     font-weight: 600;
@@ -418,6 +408,7 @@ header {
     .destinations-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
+        
     }
 }
 
@@ -457,20 +448,16 @@ header {
     }
     
     .card-content {
-        padding: 20px;
         padding: 5px;
     }
     
     .card-content h3 {
         font-size: 20px;
-        margin-bottom: 12px;
         
     }
     
     .card-content p {
         font-size: 14px;
-        margin-bottom: 20px;
-        min-height: 40px;
         
     }
     

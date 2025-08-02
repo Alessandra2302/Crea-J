@@ -86,16 +86,15 @@ main {
 h1 {
     
     color: #4B5F2A;
-
     font-weight: 800;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
     line-height: 1.2;
     font-size: 50px;
     text-align: left;
-    margin-left: 320px;
-    font-family: josefin-sans;
+    margin-left: 315px;
+    
     padding-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .contenido {
